@@ -1,0 +1,778 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter",
+        sans-serif;
+}
+
+.container{
+    max-width: 150% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.toolBar {
+    height: 75px;
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    
+}
+
+.leftToolBar {
+    float: left;
+}
+
+.rightToolBar {
+    float: right;
+}
+
+.rightToolBar ul {
+    display: flex;
+    margin: 20px;
+}
+
+.rightToolBar ul li {
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.rightToolBar ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(171, 168, 168);
+}
+
+.rightToolBar ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+.submenu
+{
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    margin-top: 20px;
+    display: none;
+}
+
+.submenu div
+{
+    height: 50px;
+}
+
+
+.submenu div:hover
+{
+    color: white;
+    cursor: pointer;
+}
+
+.submenu div h4
+{
+    font-size: 18px;
+    text-align: left;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.arrow-down
+{
+    border: solid rgb(171, 168, 168);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    padding: 5px;
+}
+
+
+.leftToolBar img {
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 45px;
+    width: 60px;
+}
+
+.aboutUs {
+    position: relative;
+    height: 115vh;
+    width: 100%;
+}
+
+.slideshow-container
+{
+    height: 100vh;
+    position: relative;
+    top: 75px;
+        width: 100%;
+        
+        /* adjust as needed */
+        margin: auto;
+}
+
+.slide-content
+{
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    
+}
+
+.slide-content h1
+{
+    font-size: 50px;
+    color: white;
+    width: 80%;
+    line-height: 70px;
+}
+
+.slide-content button
+{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 150px;
+}
+
+.slide-content p
+{
+    color: white;
+}
+
+.slide-content1
+{
+    position: absolute;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+}
+
+.home-background
+{
+    padding-top: 70px;
+    height: 80vh;
+    width: 100%;
+    display: none;
+}
+
+.home-background img
+{
+    height: 80vh;
+}
+
+.home-background .text-content
+{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.text-content h1
+{
+    font-size: 35px;
+    color: white;
+    line-height: 60px;
+}
+
+.text-content p
+{
+    color: white;
+}
+
+.text-content button
+{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    
+}
+
+
+.knowMore {
+    height: 30vh;
+    width: 100%;
+}
+
+.knowMore h4 {
+    font-size: 25px;
+    color: rgb(171, 168, 168);
+    font-family: cursive;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+
+}
+
+.knowMore button {
+    position: relative;
+    left: 45%;
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+
+}
+
+.services
+{
+    background-color: rgb(230, 229, 229);
+    height: 150vh;
+}
+
+.services-container {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.services-container h3 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.service-row {
+    height: 60vh;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.service-row .service-col {
+    height: 50vh;
+    width: 25%;
+    background-color: green;
+    margin: auto;
+}
+
+.service-col img {
+    height: 50vh;
+    width: 100%;
+}
+
+.service-col .service-inner {
+    margin-top: -80px;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    margin-left: 20px;
+}
+
+.service-inner h3
+{
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.service-inner button
+{
+    margin-top: -5px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid white;
+    outline: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.service-inner button:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.service-col .service-overlay {
+    margin-top: -100px;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.whyChooseUs
+{
+    height: 150vh;
+    background-color: blue;
+    width: 100%;
+    margin-top: -22px;
+    padding-top: 50px;
+}
+
+.whyChooseUs .whyChooseUs-head
+{
+    height: 70px;
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.whyChooseUs-head h4
+{
+    font-weight: 100;
+}
+
+.whyChooseUs-head h1
+{
+    font-weight: 100;
+}
+
+.whyChooseUs .choose-model
+{
+height: 150px;
+    background-color: green;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.choose-model h4
+{
+    color: white;
+    font-weight: 100;
+    
+}
+
+.choose-model p
+{
+    color: white;
+    font-size: 20px;
+}
+
+.ourBlogs
+{
+    height: 90vh;
+    width: 100%;
+    background-color: white;
+}
+
+.ourBlogs .ourBlogs-head
+{
+    padding-top: 30px;
+    width: 90%;
+    height: 100px;
+    
+    margin: auto;
+}
+
+.ourBlogs-head h4
+{
+    font-weight: 100;
+    color: black;
+}
+
+.blogs
+{
+    height: 70vh;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.vertical-bar {
+    border-left: 1px solid #dee2e6;
+    /* Color of the vertical bar */
+}
+
+.blogs .blogs-model{
+    height: 60vh;
+    width: 25%;
+    border: 2px solid rgb(182, 181, 181);
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.blogs-model img
+{
+    width: 100%;
+    height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-content
+{
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.blog-content h4
+{
+    font-size: 17px;
+    color: rgb(68, 67, 67);
+}
+
+.blog-content p
+{
+    color: rgb(102, 101, 101);
+}
+
+.blog-content a
+{
+    text-decoration: none;
+}
+
+.leadIndeed
+{
+    height: 50vh;
+    width: 100%;
+    background-color: blue;
+}
+
+.leadIndeed .leadIndeed-content
+{
+    float: right;
+    height: 50vh;
+    width: 45%;
+}
+
+.leadIndeed-content h1
+{
+    font-size: 60px;
+    color: white;
+}
+
+.leadIndeed-content p
+{
+    font-size: 20px;
+    color: white;
+    width: 90%;
+}
+
+.leadIndeed-content button
+{
+    width: 250px;
+    height: 40px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+}
+
+.contactUs
+{
+    margin-top: -22px;
+    height: 100vh;
+    width: 100%;
+}
+
+.contactUs .contactUs-head
+{
+    padding-top: 30px;
+    margin: auto;
+    
+}
+
+.contactUs-head h1
+{
+    font-size: 55px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.contactUs-head h6
+{
+    font-weight: 100;
+    text-align: center;
+    margin-top: -15px;
+    font-size: 16px;
+}
+
+.contactUs .form-group
+{
+    height: 60vh;
+    width: 70%;
+    margin: auto;
+    
+    text-align: center;
+}
+
+.form-group input
+{
+    width: 40%;
+    height: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+    padding-left: 15px;
+}
+
+.form-group textarea
+{
+    width: 85%;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+    font-weight: 200;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-group button
+{
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footBar
+{
+    margin: auto;
+
+}
+
+.footBar .footBar-content
+{
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    width: 90%;
+}
+
+.footBar-content .footBar-model
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.footBar-model ul h3
+{
+    font-size: 20px;
+    font-weight: 100;
+    color: blue;
+}
+
+.footBar-model ul li
+{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footBar-model ul li a
+{
+    text-decoration: none;
+    color: rgb(172, 171, 171);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.footBar-model ul ul
+{
+    display: flex;
+}
+
+.footBar-model ul ul li
+{
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(172, 171, 171);
+    border-radius: 5px;
+}
+
+.footBar-model ul ul li a
+{
+    margin-top: 7px;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footText
+{
+    margin-top: 50px;
+}
+
+.footText h6
+{
+    text-align: center;
+    color: rgb(171, 168, 168);
+    font-weight: 100;
+}
+
+.menu-icon
+{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    list-style: none;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .slideshow-container
+    {
+        display: none;
+    }
+
+    .home-background
+    {
+        display: block;
+    }
+
+    .home-menu
+    {
+        display: none;
+    }
+
+    .menu-icon
+    {
+        display: block;
+    }
+
+    .menuTarcket
+    {
+        display: none;
+    }
+
+    .aboutUs
+    {
+        height: 100vh;
+    }
+
+    .footBar-content
+    {
+        display: inline-table;
+        flex-direction: column;
+    }
+    .services
+    {
+        height: 370vh;
+    }
+    .service-row
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 170vh;
+    }
+    .service-col
+    {
+        width: 100% !important;
+        background-color: red;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .choose-model h4
+    {
+        font-size: 17px;
+    }
+
+    .choose-model p
+    {
+        font-size: 10px;
+    }
+
+    .knowMore
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .knowMore h4
+    {
+        font-size: 15px;
+    }
+
+    .knowMore button
+    {
+        margin-left: -10%;
+        height: 30px;
+        width: 120px;
+    }
+    .ourBlogs
+    {
+        width: 100% !important;
+    }
+    .blogs
+    {
+        width: 100% !important;
+    }
+
+    .blogs-model
+    {
+        width: 70% !important;
+    }
+
+    .leadIndeed-content
+    {
+        float: left !important;
+        width: 100% !important;
+    }
+
+    .leadIndeed-content h1
+    {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .leadIndeed-content p
+    {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .leadIndeed-content button
+    {
+        margin: 20px;
+    }
+
+    .contactUs
+    {
+        height: 120vh;
+    }
+
+    .contactUs-head h1
+    {
+        font-size: 30px;
+    }
+
+    .contactUs-head h6
+    {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .form-group input, .form-group textarea
+    {
+        width: 100% !important;
+    }
+
+
+
+}
+

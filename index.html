@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./static/js/script.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Wideflow It Solutions</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolBar">
+            <div class="leftToolBar">
+                <img src="./static/images/logoblue.png" alt="">
+            </div>
+            <div class="rightToolBar">
+               <div class="home-menu">
+                     <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li style="height: 80px;" onmouseenter="openSubMenu()" onmouseleave="closeSubMenu()"><a>Services</a>
+                        <div class="submenu" id="submenu" onmouseleave="closeSubMenu()">
+                            <div style="background-color: rgb(0, 13, 255);">
+                                <h4>IT Consultancy</h4>
+                            </div>
+                            <div style="background-color: rgb(4, 62, 253);">
+                                <h4>IT Outsourcing</h4>
+                            </div>
+                            <div style="background-color: rgb(0, 115, 255);">
+                                <h4>Mobile App Development</h4>
+                            </div>
+                            <div style="background-color: rgb(0, 153, 255);">
+                                <h4>Web Development</h4>
+                            </div>
+                            <div style="background-color: rgb(0, 191, 255);">
+                                <h4>eCommerce Development</h4>
+                            </div>
+                            <div style="background-color: rgb(0, 247, 255);">
+                                <h4>Design & Branding</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+               </div>
+                <li class="menu-icon">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Home</a>
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" onmouseenter="openSubMenu1()" onclick="openSubMenu1()"
+                                onmouseleave="closeSubMenu1()">Services
+                                <div class="submenu" style="right: 10px; margin-top: -5px;" id="submenu1"
+                                    onmouseleave="closeSubMenu1()">
+                                    <div style="background-color: rgb(0, 13, 255);">
+                                        <h4>IT Consultancy</h4>
+                                    </div>
+                                    <div style="background-color: rgb(4, 62, 253);">
+                                        <h4>IT Outsourcing</h4>
+                                    </div>
+                                    <div style="background-color: rgb(0, 115, 255);">
+                                        <h4>Mobile App Development</h4>
+                                    </div>
+                                    <div style="background-color: rgb(0, 153, 255);">
+                                        <h4>Web Development</h4>
+                                    </div>
+                                    <div style="background-color: rgb(0, 191, 255);">
+                                        <h4>eCommerce Development</h4>
+                                    </div>
+                                    <div style="background-color: rgb(0, 247, 255);">
+                                        <h4>Design & Branding</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">Blogs</a>
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="aboutUs">
+            <div class="home-background">
+                <img src="./static/images/bgm3.png" width="100%" alt="">
+                <div class="text-content">
+                    <h1>Future - Proof Your Business - Embrace the Digital Transformation</h1>
+                    <hr size="5" width="15%" style="margin-left: 0px; background-color: white;">
+                    <p>We equip you with the tools and strategies needed to adapt to changing industry trends, enhance operational efficiency, and unlock new growth opportunities</p>
+                    <button>Explore <span>&#8594</span></button>
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slide-content">
+                                <h1>Unparalleled Customer Support - Dedicated Team Ensures Your Success</h1>
+                                <hr style="width: 20%;">
+                                <p>
+                                Get the most out of your software with comprehensive guidance and prompt answers from our exceptional support team.
+                                </p>
+                                <button>Leaern More <span>&#8594</span></button>
+                            </div>
+                            <img src="./static/images/bgdn2.jpg" class="d-block" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./static/images/bgdn3.jpg" class="d-block" alt="Slide 2">
+                            <div class="slide-content1">
+                                <h1>Unparalleled Customer\ Support - Dedicated Team Ensures Your Success</h1>
+                                <hr style="width: 20%;">
+                                <p>
+                                Get the most out of your software with comprehensive guidance and prompt answers from our exceptional support team.
+                                </p>
+                                <button>Leaern More <span>&#8594</span></button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./static/images/blog01.jpg" class="d-block" alt="Slide 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="knowMore">
+            <h4>
+                Driving business evolution with forward-looking IT solutions, seamlessly integrating today's operations
+                with tomorrow's innovations. whether <span style="color: blue;">small or multinational</span> , we've
+                got you covered
+            </h4>
+            <button>Know More <span>&#8594</span></button>
+        </div>
+        <div class="services">
+            <div class="services-container">
+                <h3>Services</h3>
+                <div class="service-row" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="service-col">
+                        <img src="./static/images/s1.jpg" alt="">
+                        <div class="service-overlay">
+
+                        </div>
+                        <div class="service-inner">
+                            <h3>IT Consultancy<span>&#8594</span></h3>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <img src="./static/images/s2.jpg" alt="">
+                        <div class="service-overlay">
+
+                        </div>
+                        <div class="service-inner">
+                            <h3>IT Outsourcing<span>&#8594</span></h3>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <img src="./static/images/s3.jpg" alt="">
+                        <div class="service-overlay">
+
+                        </div>
+                        <div class="service-inner">
+                            <h3>Website Development<span>&#8594</span></h3>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-row" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="service-col">
+                        <img src="./static/images/s4.jpg" alt="">
+                        <div class="service-overlay">
+
+                        </div>
+                        <div class="service-inner">
+                            <h3>Mobile App Development<span>&#8594</span></h3>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <img src="./static/images/s5.jpg" alt="">
+                        <div class="service-overlay">
+
+                        </div>
+                        <div class="service-inner">
+                            <h3>ECommerce Development<span>&#8594</span></h3>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="service-col">
+                        <img src="./static/images/s6.jpg" alt="">
+                        <div class="service-overlay">
+
+                        </div>
+                        <div class="service-inner">
+                            <h3>Desgin & Branding<span>&#8594</span></h3>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="whyChooseUs">
+            <div class="whyChooseUs-head">
+                <h4>Your Ideal Partner</h4>
+                <hr style="width: 5%; margin-left:0px;" size="1">
+                <h1>Why Choose us?</h1>
+            </div>
+            <div class="choose-model" data-aos="zoom-in-up" data-aos-duration="2000"
+                style="margin-top: 100px; background-color: rgb(30, 48, 188);">
+                <h4>Client First-Focus</h4>
+                <hr size=".5">
+                <p>We don't believe in a one-size-fits-all approach. Our client-first focus ensures software is
+                    meticulously designed around your unique needs and goals. We partner closely with you throughout the
+                    development process, fostering open communication and collaborative decision-making.</p>
+            </div>
+            <div class="choose-model" data-aos="zoom-in-up" data-aos-duration="2000"
+                style="background-color: rgb(23, 88, 186);">
+                <h4>Partnering for Long-Term Growth</h4>
+                <hr size=".5">
+                <p>Your success is our top priority. We go beyond simply building software – we become an extension of
+                    your team, partnering for long-term growth. Our solutions are designed to scale alongside your
+                    business, empowering you to achieve sustainable success in the years to come.</p>
+            </div>
+            <div class="choose-model" data-aos="zoom-in-up" data-aos-duration="2000"
+                style="background-color: rgb(27, 118, 192);">
+                <h4>Unparalleled Customer Support</h4>
+                <hr size=".5">
+                <p>Don't settle for generic solutions. We create tailored software solutions that perfectly integrate
+                    with your existing systems and workflows. Our dedicated support team is always here to answer your
+                    questions, provide guidance, and ensure you get the most out of your software investment.</p>
+            </div>
+            <div class="choose-model" data-aos="zoom-in-up" data-aos-duration="2000"
+                style="background-color: rgb(30, 143, 235);">
+                <h4>Collaborative development</h4>
+                <hr size=".5">
+                <p>We work closely with you to understand your vision, then translate it into a user-friendly and
+                    effective software solution. Expect open communication, regular feedback loops, and a development
+                    experience tailored to your preferences.</p>
+            </div>
+        </div>
+        <div class="ourBlogs" data-aos="zoom-in-down">
+            <div class="ourBlogs-head">
+                <h4>Research Expertise</h4>
+                <hr style="width: 10%; margin-left: 0px;" size="1">
+                <h1>Our Blogs</h1>
+            </div>
+            <div class="blogs">
+                <div class="blogs-model">
+                    <img src="./static/images/blog01.jpg" alt="">
+                    <div class="blog-content">
+                        <h4>Our Inaugural Blog - Stay Tuned!</h4>
+                        <p>Be prepared to delve into insightful narratives and valuable content, meticulously curated to
+                            enrich your experience, coming soon to enlighten and inspire.</p>
+                        <a href="">Read More <span>&#8594</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leadIndeed" data-aos="zoom-in-down">
+            <div class="leadIndeed-content">
+                <h1>Lead Indeed</h1>
+                <p>Our company's primary mission is to deliver exceptional results by optimizing lead conversions,
+                    ensuring every opportunity is transformed into tangible success.</p>
+                <button>Zap us for business boost!</button>
+            </div>
+        </div>
+        <div class="contactUs" data-aos="zoom-in-down">
+            <div class="contactUs-head">
+                <h1>Get in touch with us</h1>
+                <h6>Have questions or need assistance? We're here to help.</h6>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Name"><input placeholder="Mobile" type="text">
+                <input type="text" placeholder="City"><input placeholder="Business Name" type="text">
+                <textarea name="" id="" cols="30" rows="5" placeholder="message"></textarea><br>
+                <button>Submit <span>&#8594</span></button>
+            </div>
+        </div>
+        <div class="footBar">
+            <hr size="1" width="95%">
+            <div class="footBar-content">
+                <div class="footBar-model">
+                    <ul>
+                        <h3>Navigation</h3>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footBar-model">
+
+                    <ul>
+                        <h3>Services</h3>
+                        <li><a href="">IT Consultancy</a></li>
+                        <li><a href="">IT Outsourcing</a></li>
+                        <li><a href="">Mobile App Development</a></li>
+                        <li><a href="">Web Development</a></li>
+                        <li><a href="">eCommerce Development</a></li>
+                        <li><a href="">Design & Branding</a></li>
+                    </ul>
+                </div>
+                <div class="footBar-model">
+
+                    <ul>
+                        <h3>Contact</h3>
+                        <li><a href="">+916374062792</a></li>
+                        <li><a href="">34, Sakthi nagar, Kanchipuram-631502, Tamilnadu, India</a></li>
+                        <li><a href="">contact@wideflo.com</a></li>
+                        <li><a href=""><span style="color: black;">Branch &#8594</span> Anna nagar, Chennai</a></li>
+                    </ul>
+                </div>
+                <div class="footBar-model">
+
+                    <ul>
+                        <h3>Reach Us On</h3>
+                        <ul>
+                            <li><a class="fa fa-whatsapp"></a></li>
+                            <li><a class="fa fa-phone"></a></li>
+                            <li><a class="fa fa-linkedin"></a></li>
+                            <li><a class="fa fa-instagram"></a></li>
+                            <li><a class="fa fa-facebook"></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footText">
+            <h6>Guiding Your Digital Frontier - Wideflo IT Solutions</h6>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            // Activate Carousel
+            $("#carouselExampleIndicators").carousel({ interval: 3000 });
+
+            // Enable Carousel Indicators
+            $(".carousel-item").click(function () {
+                $("#carouselExampleIndicators").carousel($(this).index());
+            });
+        });
+    </script>
+</body>
+
+
+</html>
